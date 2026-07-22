@@ -1,15 +1,21 @@
-n=5
-for i in range (n):
-    for j in range(n-i-1):
-        print(" ", end="")
+class solution:
+    def pattern(self, n):
 
-    for j in range(2*i+1):
-        print("*", end="")
+        for i in range (n):
+            for j in range(n-i-1):
+               print(" ", end="")
 
-    for j in range(n-i-1):
-        print(" ", end="")
+            for j in range(2*i+1):
+             print("*", end="")
+
+            for j in range(n-i-1):
+                print(" ", end="")
+
+            print()
         
-    #move next row
-    print() 
 
+if __name__ == "__main__":
+    sol = solution()
+    N=5
+    sol.pattern(N)
 
